@@ -6,24 +6,69 @@
 <title>Masaż Mobilny Bielsko-Biała | Jakub Knybel</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
-background:#f5f5f5;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f7f7f7;
 color:#333;
+line-height:1.6;
 }
 
 header{
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=1600');
+background-size:cover;
+background-position:center;
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero{
+max-width:800px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
 background:#b8864b;
 color:white;
-padding:80px 20px;
-text-align:center;
+text-decoration:none;
+border-radius:8px;
+}
+
+.btn:hover{
+background:#9b6d36;
 }
 
 section{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:60px 20px;
+}
+
+h2{
+margin-bottom:25px;
+color:#b8864b;
 }
 
 .cards{
@@ -36,41 +81,85 @@ gap:20px;
 background:white;
 padding:20px;
 border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
 .price{
 font-size:24px;
 font-weight:bold;
 color:#b8864b;
+margin-top:10px;
 }
 
-.btn{
-display:inline-block;
-padding:12px 20px;
+form{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+input, select, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+button{
 background:#b8864b;
 color:white;
-text-decoration:none;
-border-radius:8px;
+padding:12px 25px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#9b6d36;
+}
+
+.contact-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
 }
 
 footer{
 background:#222;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
+margin-top:40px;
+}
+
+.messenger{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0084ff;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
+<div class="hero">
 <h1>Masaż Mobilny Bielsko-Biała</h1>
-<p>Profesjonalne masaże z dojazdem do klienta do 25 km od Bielska-Białej</p>
+<p>Profesjonalne masaże z dojazdem do klienta do 25 km od Bielska-Białej.</p>
+<a href="#aUmów wizytę</a>
+</div>
 </header>
 
-<section>
+<section id="omnie">
+
 <h2>O mnie</h2>
 
 <p>
@@ -89,17 +178,35 @@ Mam nadzieję, że moja oferta zachęci Cię do skorzystania z jednej z usług i
 
 <div class="cards">
 
-<div class="card">Masaż karku</div>
+<div class="card">
+<h3>Masaż karku</h3>
+<p>Rozluźnienie napięć szyi i barków.</p>
+</div>
 
-<div class="card">Masaż pleców</div>
+<div class="card">
+<h3>Masaż pleców</h3>
+<p>Ulga dla przeciążonych mięśni pleców.</p>
+</div>
 
-<div class="card">Masaż całego ciała</div>
+<div class="card">
+<h3>Masaż leczniczy</h3>
+<p>Wsparcie przy dolegliwościach bólowych.</p>
+</div>
 
-<div class="card">Masaż leczniczy</div>
+<div class="card">
+<h3>Masaż całego ciała</h3>
+<p>Kompleksowy relaks i regeneracja.</p>
+</div>
 
-<div class="card">Masaż gorącymi kamieniami</div>
+<div class="card">
+<h3>Masaż gorącymi kamieniami</h3>
+<p>Relaks przy użyciu rozgrzanych kamieni.</p>
+</div>
 
-<div class="card">Taping (plastrowanie dynamiczne)</div>
+<div class="card">
+<h3>Taping (plastrowanie dynamiczne)</h3>
+<p>Wsparcie regeneracji mięśni i stawów.</p>
+</div>
 
 </div>
 
@@ -114,73 +221,168 @@ Mam nadzieję, że moja oferta zachęci Cię do skorzystania z jednej z usług i
 <div class="card">
 <h3>Masaż karku</h3>
 <p>30 minut</p>
-<p class="price">70 zł</p>
+<div class="price">70 zł</div>
 </div>
 
 <div class="card">
 <h3>Masaż pleców lub wybranych części ciała</h3>
-<p>60 minut</p>
-<p class="price">100 zł</p>
+<p>Do 60 minut</p>
+<div class="price">100 zł</div>
 </div>
 
 <div class="card">
 <h3>Masaż leczniczy</h3>
 <p>60 minut</p>
-<p class="price">120 zł</p>
+<div class="price">120 zł</div>
 </div>
 
 <div class="card">
 <h3>Masaż gorącymi kamieniami</h3>
 <p>40 minut</p>
-<p class="price">100 zł</p>
+<div class="price">100 zł</div>
 </div>
 
 <div class="card">
 <h3>Taping</h3>
-<p class="price">50 zł</p>
+<p>Jedna aplikacja</p>
+<div class="price">50 zł</div>
 </div>
 
 <div class="card">
 <h3>Masaż całego ciała</h3>
 <p>90 minut</p>
-<p class="price">160 zł</p>
+<div class="price">160 zł</div>
 </div>
 
 </div>
 
-</section>
-
-<section>
-
-<h2>Bony Podarunkowe</h2>
-
-<p>
-Możliwość zakupu bonu podarunkowego na wybraną usługę lub dowolną kwotę.
+<p style="margin-top:20px;">
+✅ Dojazd do 25 km od Bielska-Białej w cenie usługi.
 </p>
 
-<br>
+</section>
 
-<a class="btn" href="mailto:jakub.k.masaz@gmail.com">
-Kup Bon Online
-</a>
+<section id="rezerwacja">
+
+<h2>Rezerwacja online</h2>
+
+<form action="mailto:jakub.k.masaz@gmail.com" method="post" enctype="text/plain">
+
+<input type="text" name="imie" placeholder="Imię i nazwisko" required>
+
+<input type="tel" name="telefon" placeholder="Telefon" required>
+
+<input type="email" name="email" placeholder="Adres e-mail">
+
+<select name="usluga">
+
+<option>Masaż karku</option>
+<option>Masaż pleców</option>
+<option>Masaż leczniczy</option>
+<option>Masaż całego ciała</option>
+<option>Masaż gorącymi kamieniami</option>
+<option>Taping</option>
+
+</select>
+
+<input type="date">
+
+<textarea name="uwagi" rows="5" placeholder="Dodatkowe informacje"></textarea>
+
+<button type="submit">Wyślij rezerwację</button>
+
+</form>
 
 </section>
 
 <section>
+
+<h2>Bony podarunkowe</h2>
+
+<form action="mailto:jakub.k.masaz@gmail.com" method="post" enctype="text/plain">
+
+<input type="text" placeholder="Imię i nazwisko kupującego">
+
+<input type="text" placeholder="Dla kogo bon?">
+
+<select>
+<option>Masaż karku - 70 zł</option>
+<option>Masaż pleców - 100 zł</option>
+<option>Masaż leczniczy - 120 zł</option>
+<option>Masaż gorącymi kamieniami - 100 zł</option>
+<option>Masaż całego ciała - 160 zł</option>
+<option>Bon na dowolną kwotę</option>
+</select>
+
+<button type="submit">
+Wyślij zapytanie o bon
+</button>
+
+</form>
+
+</section>
+
+<section>
+
+<h2>Opinie klientów</h2>
+
+<p>
+Opinie publikowane są dopiero po zatwierdzeniu przez administratora.
+</p>
+
+<form action="mailto:jakub.k.masaz@gmail.com" method="post" enctype="text/plain">
+
+<input type="text" placeholder="Imię lub inicjały">
+
+<select>
+<option>⭐⭐⭐⭐⭐</option>
+<option>⭐⭐⭐⭐</option>
+<option>⭐⭐⭐</option>
+</select>
+
+<textarea rows="5" placeholder="Treść opinii"></textarea>
+
+<button type="submit">
+Wyślij opinię
+</button>
+
+</form>
+
+</section>
+
+<section id="kontakt">
 
 <h2>Kontakt</h2>
 
+<div class="contact-box">
+
 <p><strong>Telefon:</strong> +48 883 310 054</p>
 
-<p><strong>Email:</strong> jakub.k.masaz@gmail.com</p>
+<p><strong>E-mail:</strong> jakub.k.masaz@gmail.com</p>
 
-<p><strong>Obszar działania:</strong> Bielsko-Biała + 25 km</p>
+<p><strong>Obszar działania:</strong> Bielsko-Biała i okolice do 25 km</p>
+
+<br>
+
+tel:+48883310054
+Zadzwoń teraz
+</a>
+
+<a class="btn" href="mailto:jakub.k.masaz@gmail.com">
+Napisz e-mail
+</a>
+
+</div>
 
 </section>
 
 <footer>
 © 2026 Jakub Knybel | Masaż Mobilny Bielsko-Biała
 </footer>
+
+https://m.me/twojprofil
+Messenger
+</a>
 
 </body>
 </html>
