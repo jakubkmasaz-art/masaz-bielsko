@@ -10,31 +10,30 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:#f7f7f7;
+background:#fafafa;
 color:#333;
 line-height:1.6;
 }
 
 header{
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url('https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=1600');
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
-height:80vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-padding:20px;
-}
-
-.hero{
-max-width:800px;
 }
 
 .hero h1{
@@ -49,25 +48,25 @@ margin-bottom:25px;
 
 .btn{
 display:inline-block;
-padding:12px 25px;
+padding:14px 28px;
 background:#b8864b;
 color:white;
 text-decoration:none;
 border-radius:8px;
+transition:0.3s;
 }
 
 .btn:hover{
-background:#9b6d36;
+background:#9c6f3d;
 }
 
 section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
+padding:80px 10%;
 }
 
 h2{
-margin-bottom:25px;
+text-align:center;
+margin-bottom:40px;
 color:#b8864b;
 }
 
@@ -79,141 +78,166 @@ gap:20px;
 
 .card{
 background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 12px rgba(0,0,0,0.1);
 }
 
 .price{
-font-size:24px;
+font-size:1.8rem;
 font-weight:bold;
 color:#b8864b;
-margin-top:10px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
 }
 
 form{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.08);
+max-width:700px;
+margin:auto;
 }
 
-input, select, textarea{
+input,
+textarea,
+select{
 width:100%;
-padding:12px;
-margin:10px 0;
+padding:14px;
+margin-bottom:15px;
 border:1px solid #ddd;
-border-radius:6px;
+border-radius:8px;
 }
 
 button{
+padding:14px 25px;
 background:#b8864b;
 color:white;
-padding:12px 25px;
 border:none;
-border-radius:6px;
+border-radius:8px;
 cursor:pointer;
 }
 
 button:hover{
-background:#9b6d36;
+background:#9c6f3d;
 }
 
-.contact-box{
+.bony{
+background:#b8864b;
+color:white;
+padding:40px;
+text-align:center;
+border-radius:12px;
+}
+
+.contact{
+text-align:center;
+font-size:1.1rem;
+}
+
+.contact a{
+color:#b8864b;
+text-decoration:none;
+}
+
+.review{
 background:white;
 padding:20px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.08);
+border-radius:12px;
+box-shadow:0 3px 12px rgba(0,0,0,0.1);
+margin-bottom:15px;
 }
 
 footer{
 background:#222;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
 margin-top:40px;
 }
 
 .messenger{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#0084ff;
-color:white;
+color:#fff;
+text-decoration:none;
 padding:15px 20px;
 border-radius:50px;
-text-decoration:none;
 font-weight:bold;
+box-shadow:0 4px 12px rgba(0,0,0,.3);
 }
 </style>
 </head>
-
 <body>
 
 <header>
 <div class="hero">
+<div>
 <h1>Masaż Mobilny Bielsko-Biała</h1>
-<p>Profesjonalne masaże z dojazdem do klienta do 25 km od Bielska-Białej.</p>
-<a href="#aUmów wizytę</a>
+<p>Profesjonalne masaże z dojazdem do klienta do 25 km od Bielska-Białej</p>
+#rezerwacjaUmów wizytę</a>
+</div>
 </div>
 </header>
 
 <section id="omnie">
-
 <h2>O mnie</h2>
-
+<div class="about">
 <p>
-Nazywam się Jakub Knybel i jestem dyplomowanym masażystą. Oferuję masaże z dojazdem do domu, dzięki czemu możesz zadbać o swoje zdrowie i relaks bez wychodzenia z mieszkania.
-
-Każdego klienta traktuję indywidualnie, dbając o komfort, miłą atmosferę i profesjonalne wykonanie zabiegu. W swojej ofercie posiadam różne rodzaje masaży, dostosowane zarówno do osób szukających relaksu, jak i tych zmagających się z napięciami czy bólem mięśni.
-
-Mam nadzieję, że moja oferta zachęci Cię do skorzystania z jednej z usług i pozwoli przekonać się, jak wiele dobrego może zrobić odpowiednio wykonany masaż.
+Nazywam się Jakub Knybel i oferuję profesjonalne masaże z dojazdem do klienta.
+Działam na terenie Bielska-Białej oraz okolic w promieniu do 25 km.
+Moim celem jest poprawa samopoczucia, redukcja bólu i napięć mięśniowych oraz zapewnienie pełnego relaksu bez konieczności wychodzenia z domu.
 </p>
-
+</div>
 </section>
 
-<section>
-
+<section id="oferta">
 <h2>Oferta</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Masaż karku</h3>
-<p>Rozluźnienie napięć szyi i barków.</p>
+<p>Redukcja napięć w obrębie szyi i barków.</p>
 </div>
 
 <div class="card">
 <h3>Masaż pleców</h3>
-<p>Ulga dla przeciążonych mięśni pleców.</p>
+<p>Pomoc przy przeciążeniach i bólach kręgosłupa.</p>
 </div>
 
 <div class="card">
-<h3>Masaż leczniczy</h3>
-<p>Wsparcie przy dolegliwościach bólowych.</p>
+<h3>Masaż wybranych części ciała</h3>
+<p>Indywidualnie dopasowany do potrzeb klienta.</p>
 </div>
 
 <div class="card">
 <h3>Masaż całego ciała</h3>
-<p>Kompleksowy relaks i regeneracja.</p>
+<p>Kompleksowy relaks i regeneracja organizmu.</p>
+</div>
+
+<div class="card">
+<h3>Masaż leczniczy</h3>
+<p>Wsparcie przy dolegliwościach bólowych mięśni i stawów.</p>
 </div>
 
 <div class="card">
 <h3>Masaż gorącymi kamieniami</h3>
-<p>Relaks przy użyciu rozgrzanych kamieni.</p>
+<p>Głęboki relaks dzięki terapii rozgrzanymi kamieniami.</p>
 </div>
 
 <div class="card">
 <h3>Taping (plastrowanie dynamiczne)</h3>
-<p>Wsparcie regeneracji mięśni i stawów.</p>
+<p>Wsparcie regeneracji mięśni i stawów za pomocą kinesiotapingu.</p>
 </div>
 
 </div>
-
 </section>
 
-<section>
-
+<section id="cennik">
 <h2>Cennik</h2>
 
 <div class="cards">
@@ -221,132 +245,136 @@ Mam nadzieję, że moja oferta zachęci Cię do skorzystania z jednej z usług i
 <div class="card">
 <h3>Masaż karku</h3>
 <p>30 minut</p>
-<div class="price">70 zł</div>
+<p class="price">70 zł</p>
 </div>
 
 <div class="card">
 <h3>Masaż pleców lub wybranych części ciała</h3>
-<p>Do 60 minut</p>
-<div class="price">100 zł</div>
+<p>do 60 minut</p>
+<p class="price">100 zł</p>
 </div>
 
 <div class="card">
 <h3>Masaż leczniczy</h3>
 <p>60 minut</p>
-<div class="price">120 zł</div>
+<p class="price">120 zł</p>
 </div>
 
 <div class="card">
 <h3>Masaż gorącymi kamieniami</h3>
 <p>40 minut</p>
-<div class="price">100 zł</div>
+<p class="price">100 zł</p>
 </div>
 
 <div class="card">
 <h3>Taping</h3>
 <p>Jedna aplikacja</p>
-<div class="price">50 zł</div>
+<p class="price">50 zł</p>
 </div>
 
 <div class="card">
 <h3>Masaż całego ciała</h3>
 <p>90 minut</p>
-<div class="price">160 zł</div>
+<p class="price">160 zł</p>
 </div>
 
 </div>
 
-<p style="margin-top:20px;">
-✅ Dojazd do 25 km od Bielska-Białej w cenie usługi.
+<p style="margin-top:20px;text-align:center;">
+✅ Dojazd na terenie Bielska-Białej i do 25 km wliczony w cenę.
 </p>
+
+</section>
+
+<section id="bony">
+<h2>Bony Podarunkowe</h2>
+
+<div class="bony">
+
+<h3>Podaruj bliskiej osobie chwilę relaksu</h3>
+
+<p style="margin:20px 0;">
+Dostępne bony podarunkowe na każdy rodzaj masażu lub dowolnie wybraną kwotę.
+</p>
+
+<a href="mailto:jakub.k.masaz@gmail.com" class="btn">
+Kup Bon Online
+</a>
+
+</div>
 
 </section>
 
 <section id="rezerwacja">
 
-<h2>Rezerwacja online</h2>
+<h2>Rezerwacja Online</h2>
 
 <form action="mailto:jakub.k.masaz@gmail.com" method="post" enctype="text/plain">
 
 <input type="text" name="imie" placeholder="Imię i nazwisko" required>
 
-<input type="tel" name="telefon" placeholder="Telefon" required>
+<input type="tel" name="telefon" placeholder="Numer telefonu" required>
 
 <input type="email" name="email" placeholder="Adres e-mail">
 
-<select name="usluga">
-
+<select name="usluga" required>
+<option value="">Wybierz usługę</option>
 <option>Masaż karku</option>
 <option>Masaż pleców</option>
-<option>Masaż leczniczy</option>
+<option>Masaż wybranych części ciała</option>
 <option>Masaż całego ciała</option>
+<option>Masaż leczniczy</option>
 <option>Masaż gorącymi kamieniami</option>
 <option>Taping</option>
-
 </select>
 
-<input type="date">
+<input type="date" name="data">
 
-<textarea name="uwagi" rows="5" placeholder="Dodatkowe informacje"></textarea>
+<textarea name="uwagi" rows="5" placeholder="Dodatkowe uwagi"></textarea>
 
-<button type="submit">Wyślij rezerwację</button>
+<button type="submit">Wyślij zgłoszenie</button>
 
 </form>
 
 </section>
 
-<section>
+<section id="opinie">
 
-<h2>Bony podarunkowe</h2>
+<h2>Opinie Klientów</h2>
 
-<form action="mailto:jakub.k.masaz@gmail.com" method="post" enctype="text/plain">
-
-<input type="text" placeholder="Imię i nazwisko kupującego">
-
-<input type="text" placeholder="Dla kogo bon?">
-
-<select>
-<option>Masaż karku - 70 zł</option>
-<option>Masaż pleców - 100 zł</option>
-<option>Masaż leczniczy - 120 zł</option>
-<option>Masaż gorącymi kamieniami - 100 zł</option>
-<option>Masaż całego ciała - 160 zł</option>
-<option>Bon na dowolną kwotę</option>
-</select>
-
-<button type="submit">
-Wyślij zapytanie o bon
-</button>
-
-</form>
-
-</section>
-
-<section>
-
-<h2>Opinie klientów</h2>
-
-<p>
-Opinie publikowane są dopiero po zatwierdzeniu przez administratora.
+<p style="text-align:center;margin-bottom:30px;">
+Wszystkie opinie są publikowane po zatwierdzeniu przez administratora.
 </p>
 
 <form action="mailto:jakub.k.masaz@gmail.com" method="post" enctype="text/plain">
 
-<input type="text" placeholder="Imię lub inicjały">
+<input type="text" name="autor" placeholder="Imię lub inicjały" required>
 
-<select>
+<select name="ocena" required>
+<option value="">Ocena</option>
 <option>⭐⭐⭐⭐⭐</option>
 <option>⭐⭐⭐⭐</option>
 <option>⭐⭐⭐</option>
 </select>
 
-<textarea rows="5" placeholder="Treść opinii"></textarea>
+<textarea
+name="opinia"
+rows="5"
+placeholder="Napisz swoją opinię..."
+required></textarea>
 
 <button type="submit">
-Wyślij opinię
+Wyślij opinię do zatwierdzenia
 </button>
 
 </form>
+
+<br><br>
+
+<div class="review">
+<strong>Miejsce na zatwierdzone opinie klientów.</strong>
+<p>Po otrzymaniu opinii dodajesz ją tutaj ręcznie lub później podłączysz Firebase.</p>
+</div>
 
 </section>
 
@@ -354,30 +382,28 @@ Wyślij opinię
 
 <h2>Kontakt</h2>
 
-<div class="contact-box">
+<div class="contact">
 
-<p><strong>Telefon:</strong> +48 883 310 054</p>
+<p>
+📞 tel:+48883310054+48 883 310 054</a>
+</p>
 
-<p><strong>E-mail:</strong> jakub.k.masaz@gmail.com</p>
+<p>
+📧 <a href="mailto:jakub.k.masaz@gmail.com">jakub.k.masaz@gmail.com</a>
+</p>
 
-<p><strong>Obszar działania:</strong> Bielsko-Biała i okolice do 25 km</p>
-
-<br>
-
-tel:+48883310054
-Zadzwoń teraz
-</a>
-
-<a class="btn" href="mailto:jakub.k.masaz@gmail.com">
-Napisz e-mail
-</a>
+<p>
+📍 Bielsko-Biała i okolice do 25 km
+</p>
 
 </div>
 
 </section>
 
 <footer>
-© 2026 Jakub Knybel | Masaż Mobilny Bielsko-Biała
+<p>
+© 2026 Masaż Mobilny Bielsko-Biała | Jakub Knybel
+</p>
 </footer>
 
 https://m.me/twojprofil
